@@ -1,69 +1,91 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000000, #887c72); /* Brown to nude gradient */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
 }
 
-.calculator {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    width: 300px; /* Increase the width */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/84366486/original/c490739223326be0ddccbf3bd1d7381ce7926fa5/do-stunning-background-videos-for-your-website.png');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-.screen {
-    background-color: #f0f0f0; /* Light gray background for screen */
-    padding: 20px;
-    text-align: right;
-    font-size: 1.8em; /* Increase the font size */
-    border-bottom: 1px solid #ccc; /* Add border at the bottom */
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Update grid to have 3 columns */
-    grid-template-rows: repeat(7, auto); /* Update grid to have 7 rows */
-    gap: 10px; /* Add gap between buttons */
-    padding: 10px; /* Add padding to the buttons container */
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
 }
 
-.number-buttons, .operator-buttons {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.number-buttons button, .operator-buttons button {
-    flex: 1 1 33.33%; /* Each button takes 1/3 of the space */
-    padding: 15px; /* Adjust padding for buttons */
-    font-size: 1.2em; /* Adjust font size for buttons */
-    border: none;
-    background-color: #ddd;
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
     cursor: pointer;
 }
-
-.number-buttons button:hover, .operator-buttons button:hover {
-    background-color: #ccc;
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
 }
-
-button.operator {
-    background-color: #ff9999; /* Light red for operator buttons */
+.fab {
+    color: #000000;
 }
-
-button.operator:hover {
-    background-color: #ff6666; /* Darker red on hover */
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
 }
-
-button.clear, button.delete, button.compute {
-    background-color: #66cc66; /* Light green for special buttons */
+.cv{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
-
-button.clear:hover, button.delete:hover, button.compute:hover {
-    background-color: #339933; /* Darker green on hover */
+.aboutme{
+    background: url('https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/84366486/original/c490739223326be0ddccbf3bd1d7381ce7926fa5/do-stunning-background-videos-for-your-website.png');
+}
+.heading-text{
+    text-align: center;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
